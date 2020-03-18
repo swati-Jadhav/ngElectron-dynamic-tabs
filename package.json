@@ -1,7 +1,7 @@
 {
   "name": "ng-electron-dynamic-tabs",
   "version": "0.0.0",
-  "main":"main.js",
+  "main": "main.js",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,8 +9,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "start:electron": "ng build --base-href ./ && electron .",
-    "start:electronprod": "ng build --prod --base-href='https://swati-Jadhav.github.io/ngElectron-dynamic-tabs/' && electron ."
+    "electron": "electron .",
+    "electron-build:dev": "ng build --base-href ./ && electron .",
+    "electron-build:prod": "ng build --prod --base-href ./ && electron ."
   },
   "private": true,
   "dependencies": {
@@ -37,6 +38,7 @@
     "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
     "electron": "^8.1.1",
+    "electron-packager": "^14.2.1",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.1.0",
