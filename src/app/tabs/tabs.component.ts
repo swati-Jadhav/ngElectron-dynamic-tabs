@@ -16,12 +16,6 @@ export class TabsComponent implements OnInit {
   },{
     id:3,
     content:'This is a view 3'
-  },{
-    id:4,
-    content:'This is a view 4'
-  },{
-    id:5,
-    content:'This is a view 5'
   }];
 
   addedTabs = [];
